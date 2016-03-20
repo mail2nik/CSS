@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS based DropDown</title>
+
+		<style>
+			.dropbtn {
+				font-family: Georgia;
+				font-style: italic;
+				font-size: 18px;
+				font-color: black;
+				background-color: #CFCFCF;
+				padding: 0px 20px;
+				margin-left: 2px;
+				height: 37px;
+				
+				border-bottom: 1px solid #6d6d6d;
+			}
+
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+			.dropdown-content {
+				width: 200px;
+
+				border: 1px solid #6d6d6d;
+				border-top: 0px;
+				padding: 10px;
+				background-color: white;
+
+				margin-left: 2px;
+
+				display: none;
+				position: absolute;
+			}
+
+			.dropdown-content a {
+				font-family: Georgia;
+				font-style: italic;
+				font-size: 14px;
+				font-color: black;
+				padding: 5px 0px;
+				border-bottom: 1px solid #cfcfcf;
+
+			    text-decoration: none;
+			    display: block;
+			}
+
+			.dropdown-content a:hover {
+				font-family: Georgia;
+				font-style: italic;
+				font-size: 14px;
+				font-color: #bd0707;
+				padding: 5px 0px;
+				border-bottom: 1px solid #cfcfcf;
+			}
+
+			.dropdown:hover .dropdown-content {
+			    display: block;
+			}
+
+			.dropdown:hover .dropbtn {
+			    font-family: Georgia;
+				font-style: italic;
+				font-size: 18px;
+				font-color: #8c8c8c;
+				background-color: white;
+				padding: 0px 20px;
+				margin-left: 2px;
+				height: 37px;
+
+				border: 1px solid black;
+				border-bottom: 0px;
+
+			}
+
+			ul {
+				list-style-type:none;
+			}
+
+			
+		</style>
+	</head>
+
+	<body>
+		<p style="font-size:24px">Example of CSS based drop downs<span style="color:red; font-size:14px"> (Every menu should show its drop-down on hover effect)</span></p>
+
+		<div class="dropdown">
+  			<button class="dropbtn" style="margin-left:0px">Home</button>
+  			<div class="dropdown-content" style="margin-left:0px">
+  				<ul>
+  					<li><a href="#">Link 1</a></li>
+    				<li><a href="#">Link 2</a></li>
+    				<li><a href="#">Link 3</a></li>
+    			</ul>
+  			</div>
+		</div>
+
+		<div class="dropdown">
+  			<button class="dropbtn">About Us</button>
+  			<div class="dropdown-content">
+  				<ul>
+  					<li><a href="#">Link 1</a></li>
+    				<li><a href="#">Link 2</a></li>
+    				<li><a href="#">Link 3</a></li>
+    			</ul>
+  			</div>
+		</div>
+
+		<div class="dropdown">
+  			<button class="dropbtn">Our Services</button>
+  			<div class="dropdown-content">
+  				<ul>
+  					<li><a href="#">Link 1</a></li>
+    				<li><a href="#">Link 2</a></li>
+    				<li><a href="#">Link 3</a></li>
+    			</ul>
+  			</div>
+		</div>
+
+		<div class="dropdown">
+  			<button class="dropbtn">Our Portfolio</button>
+  			<div class="dropdown-content">
+  				<ul>
+  					<li><a href="#">Link 1</a></li>
+    				<li><a href="#">Link 2</a></li>
+    				<li><a href="#">Link 3</a></li>
+    			</ul>
+  			</div>
+		</div>
+
+		<div class="dropdown">
+  			<button class="dropbtn">Contact Us</button>
+  			<div class="dropdown-content">
+  				<ul>
+  					<li><a href="#">Link 1</a></li>
+    				<li><a href="#">Link 2</a></li>
+    				<li><a href="#">Link 3</a></li>
+    			</ul>
+  			</div>
+		</div>
+
+	</body>
+</html>

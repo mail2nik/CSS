@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        body {
+            font-family:verdana;
+            font-size:12px;
+        }
+        .parent {
+            border:1px solid red;
+            width:530px;
+            /*min-height:100%;*/
+            padding:5px;
+        }
+        .parent_new {
+            border:1px solid red;
+            width:530px;            
+            padding:5px;
+            display: table-cell;
+        }
+        .row_level
+        {
+            display:table-cell;
+        }
+        .cell-level {
+            display:table-cell;
+            border:1px solid red;
+        }
+        .left {
+            border:1px solid blue;
+            width:200px;
+            float:left;
+            position:relative;
+            padding:3px;
+        }
+        .left {
+            border:1px solid blue;
+            width:200px;
+            float:left;
+            position:relative;
+            padding:3px;
+            display:table-row;
+        }
+        .right {
+            border:1px solid green;
+            width:300px;
+            float:right;
+            position: relative;
+            padding:3px;
+        }
+        .clr { clear:both; }
+        .footer {
+            border:1px solid orange;
+            position: relative;
+            padding:3px;
+            margin-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent_new">
+        <div class="row_level">
+        <div class="cell-level">float left div here only static content
+        </div>
+        <div class="cell-level">
+            float right div dynamic content here<br />
+            float right div dynamic content here<br />
+            float right div dynamic content here<br />
+            float right div dynamic content here<br />
+            float right div dynamic content here<br />
+            float right div dynamic content here<br />
+            float right div dynamic content here<br />
+            float right div dynamic content here<br />
+         </div>
+        </div>
+        <div class="clr"></div>
+        <div class="footer">Footer here</div>
+    </div>
+</body>
+</html>
